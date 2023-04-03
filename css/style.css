@@ -244,7 +244,16 @@ video {
   margin-top: 10px;
 }
 
-
+.tiendabox {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #202020;
+  border: 1px solid #725e5e;
+  border-radius: 10px;
+  text-align: center;
+}
 /*fin cajas de productos*/
 /*fin tienda*/
 
@@ -273,7 +282,7 @@ h2 {
 
 
 /*Galeria*/
-  .gallery {
+  .galeriaf {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
@@ -299,7 +308,7 @@ h2 {
     
   .item3 {
       grid-column: 3;
-      grid-row: 2;
+      grid-row: 1;
       background-image: url('../png/f3.jpg');
     }
     
@@ -335,6 +344,10 @@ h2 {
 
 @media (max-width: 768px){
   .ofertashome{display: none;}
+}
+
+@media (min-width: 768px){
+  .tiendabox{display: none;}
 }
 
 /*fin home boostrap responsive*/
