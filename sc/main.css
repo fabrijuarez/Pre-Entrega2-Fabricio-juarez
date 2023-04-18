@@ -206,7 +206,7 @@ footer footer-right ul li footer-right ul li:last-child {
 /*fin boxs responsive boostrap*/
 /*responsive boostrap tienda*/
 @media (width < 768px) {
-  .tiendat {
+  .boxproducto {
     display: none;
   }
 }
@@ -362,3 +362,110 @@ img {
 }
 
 /*fin cajas*//*# sourceMappingURL=main.css.map */
+@media (max-width: 768px){
+  .producto{ display: none;}}
+  
+  
+  @media (max-width: 768px){
+    .linkhome{display: none;}
+  }
+  
+  @media (max-width: 768px){
+    .ofertashome{display: none;}
+  }
+  
+  @media (min-width: 768px){
+    .tiendabox{display: none;}
+  }
+  
+  /*fin home boostrap responsive*/
+  
+  /*Nosotros Boostrap responsive*/
+  
+  @media (max-width: 768px){
+    
+     video {
+  display: none;
+     }
+    }
+  
+  
+    @media (max-width: 768px){
+      .footerr{
+        width: 10px;
+      
+      }
+    }
+    @media (max-width: 768px){
+      .map{
+       
+          width: 400px;
+          height: 300px;
+        
+        
+      }
+    }
+  /*fin Nosotros Boostrap responsive*/
+  
+  /*boxs responsive boostrap*/
+    @media (max-width: 576px){
+      .producto{ display: none;}}
+  
+      @media (max-width: 768px){
+        .map{
+         
+            width: 250px;
+            height: 150px;
+          
+          
+        }
+      }
+      @media (min-width: 576px){
+        .contacto{
+          width: 90%;
+        }
+      }
+  
+      @media (min-widt: 768px){
+        .contacto{
+         
+            display: none;
+          
+          
+        }
+      }
+      /*fin boxs responsive boostrap*/
+  
+  
+  
+    /*responsive boostrap tienda*/
+      @media (min-width: 576px){
+        .imgl{
+         
+        
+          
+        }
+      }
+  
+      @media (width < 768px){
+        .tiendat{
+         
+            display: none;
+          
+          
+        }
+      }
+  
+  
+      @media (min-width: 768px) {
+        .imgtienda {
+          max-width: 50%; /* establece el ancho máximo de la imagen al 50% del contenedor en pantallas con un ancho mínimo de 768px */
+        }
+      }
+      
+      @media (min-width: 1200px) {
+        .imgtienda {
+          max-width: 33%; /* establece el ancho máximo de la imagen al 33% del contenedor en pantallas con un ancho mínimo de 1200px */
+        }
+      }
+  
