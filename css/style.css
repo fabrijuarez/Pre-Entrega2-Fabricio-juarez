@@ -3,7 +3,7 @@
 
 
 .navbar{
-  background-color: #333333;
+  background-color: #9b9b9b;
   overflow: hidden;
 }
 
@@ -25,7 +25,7 @@
 
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #333333;
   color: black;
 }
 
@@ -57,19 +57,89 @@
 
 /*footer */
 
-
+/* Estilos para el footer */
+/* Estilos para el footer */
 footer {
-  background-color: #161616;
-  padding: 15px;
+  background-color: #686868;
+  color: #333333;
+  padding: 20px;
   text-align: center;
-  font-size: 10px;
 }
 
+/* Estilos para el wrapper */
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-footer a {
-  color: rgb(255, 255, 255);
+/* Estilos para la sección izquierda */
+.footer-left {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección derecha */
+.footer-right {
+  flex: 1 1 100%;
+}
+.tog
+/* Estilos para los enlaces */
+.footer-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-right ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-right ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-right ul li a {
+  color: #fff;
   text-decoration: none;
 }
+
+/* Estilos responsive */
+@media only screen and (min-width: 768px) {
+  .footer-left {
+    flex: 0 0 50%;
+    margin-bottom: 0;
+  }
+
+  .footer-right {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-right ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-right ul li {
+    margin-right: 20px;
+  }
+
+  .footer-right ul li:last-child {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-wrapper {
+    margin: 0 auto;
+  }
+}
+
 
 /*fin footer */
 
@@ -80,13 +150,20 @@ footer a {
 body {
   position: relative;
   align-items: center;
-  background-color: #464646;
+  background-color: #000000;
 }
 
 /*fin background*/
 
 
 
+.contenedorr {
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
 
 
 
@@ -167,19 +244,13 @@ p {
 
 
 /*video/nosotros*/
-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  margin: 20px 0;
-}
 
+/*
 .mp4v {
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 /*link mapa/nosotros*/
@@ -214,9 +285,9 @@ video {
 
 
 
-
 /*tienda*/
 /*cajas de productos*/
+h2 { text-align: center;}
 .producto {
   display: inline-block;
   border: 1px solid #ccc;
@@ -239,7 +310,7 @@ video {
 }
 
 .producto .precio {
-  color: #ccc;
+  color: #ffffff;
   font-size: 16px;
   margin-top: 10px;
 }
@@ -249,13 +320,21 @@ video {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #202020;
-  border: 1px solid #725e5e;
+  background-color: #797979;
+  border: 1px solid #caa6a6;
   border-radius: 10px;
   text-align: center;
 }
+/*imagen tienda*/
+.imgtienda {
+  width: 100%; 
+  height: auto; 
+}
 /*fin cajas de productos*/
 /*fin tienda*/
+
+
+
 
 
 
@@ -356,7 +435,7 @@ h2 {
 
 @media (max-width: 768px){
   
-   .mp4v{
+   video {
 display: none;
    }
   }
@@ -425,6 +504,19 @@ display: none;
           display: none;
         
         
+      }
+    }
+
+
+    @media (min-width: 768px) {
+      .imgtienda {
+        max-width: 50%; /* establece el ancho máximo de la imagen al 50% del contenedor en pantallas con un ancho mínimo de 768px */
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      .imgtienda {
+        max-width: 33%; /* establece el ancho máximo de la imagen al 33% del contenedor en pantallas con un ancho mínimo de 1200px */
       }
     }
 

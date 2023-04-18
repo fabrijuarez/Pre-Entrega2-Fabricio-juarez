@@ -1,0 +1,42 @@
+
+.navbar{
+    background-color: #9b9b9b;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+   text-align: right;
+    color: white;
+    text-align: right;
+    display: flex;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nabvar-item{align-items: left;}
+  .navbar a.active {
+    background-color: #af910d;
+    color: white;
+  }
+  
+  
+  .navbar a:hover {
+    background-color: #333333;
+    color: black;
+  }
+  
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  
+  
+  
+  .navbar-toggler{color: #ffffff;}
+  /*logo*/
+  
+  .logo{ 
+    width:60px ;
+  }

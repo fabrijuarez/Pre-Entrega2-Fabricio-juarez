@@ -1,0 +1,47 @@
+.galeriaf {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+ 
+  
+.item {
+    background-size: cover;
+    background-position: center;
+  }
+  
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url('../png/f1.jpg');
+  }
+  
+.item2 {
+    grid-column: 3;
+    grid-row: 1;
+    background-image: url('../png/f2.jpg');
+  }
+  
+.item3 {
+    grid-column: 3;
+    grid-row: 1;
+    background-image: url('../png/f3.jpg');
+  }
+  
+.item4 {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url('../png/f4.jpg');
+  }
+  
+.item5 {
+    grid-column: 2;
+    grid-row: 3;
+    background-image: url('../png/f5.jpg');
+  }
+  
+.item6 {
+    grid-column: 3;
+    grid-row: 3;
+    background-image: url('../png/f6.jpg');
+  } }
