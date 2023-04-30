@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 h1 {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   font-family: "Tilt Prism", cursive;
@@ -83,6 +84,7 @@ footer {
   /* Estilos para la sección derecha */
   /* Estilos para los enlaces */
 }
+
 footer footer-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -90,45 +92,56 @@ footer footer-wrapper {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 footer .left {
   flex: 1 1 100%;
   margin-bottom: 20px;
 }
+
 footer footer-right {
   flex: 1 1 100%;
 }
+
 footer footer-right ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 footer footer-right ul li {
   display: inline-block;
   margin-right: 10px;
   /* Estilos responsive */
 }
+
 footer footer-right ul li footer-right ul li:last-child {
   margin-right: 0;
 }
+
 footer footer-right ul li .footer-right ul li a {
   color: #fff;
   text-decoration: none;
 }
+
 footer footer-right ul li footer-right {
   flex: 0 0 50%;
   display: flex;
   justify-content: flex-end;
 }
+
 footer footer-right ul li footer-right ul {
   display: flex;
   justify-content: flex-end;
 }
+
 footer footer-right ul li footer-right ul li {
   margin-right: 20px;
 }
+
 footer footer-right ul li footer-right ul li:last-child {
   margin-right: 0;
 }
+
 @media only screen and (min-width: 1024px) {
   footer footer-wrapper {
     margin: 0 auto;
@@ -141,27 +154,32 @@ footer footer-right ul li footer-right ul li:last-child {
     margin-bottom: 0;
   }
 }
+
 /*Home boostrap responsive*/
 @media (max-width: 768px) {
   .producto {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .linkhome {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .ofertashome {
     display: none;
   }
 }
+
 @media (min-width: 768px) {
   .tiendabox {
     display: none;
   }
 }
+
 /*fin home boostrap responsive*/
 /*Nosotros Boostrap responsive*/
 @media (max-width: 768px) {
@@ -169,17 +187,20 @@ footer footer-right ul li footer-right ul li:last-child {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .footerr {
     width: 10px;
   }
 }
+
 @media (max-width: 768px) {
   .map {
     width: 400px;
     height: 300px;
   }
 }
+
 /*fin Nosotros Boostrap responsive*/
 /*boxs responsive boostrap*/
 @media (max-width: 576px) {
@@ -187,22 +208,26 @@ footer footer-right ul li footer-right ul li:last-child {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
   .map {
     width: 250px;
     height: 150px;
   }
 }
+
 @media (min-width: 576px) {
   .contacto {
     width: 90%;
   }
 }
+
 @media (min-widt: 768px) {
   .contacto {
     display: none;
   }
 }
+
 /*fin boxs responsive boostrap*/
 /*responsive boostrap tienda*/
 @media (width < 768px) {
@@ -210,18 +235,21 @@ footer footer-right ul li footer-right ul li:last-child {
     display: none;
   }
 }
+
 @media (min-width: 768px) {
   .imgtienda {
     max-width: 50%;
     /* establece el ancho máximo de la imagen al 50% del contenedor en pantallas con un ancho mínimo de 768px */
   }
 }
+
 @media (min-width: 1200px) {
   .imgtienda {
     max-width: 33%;
     /* establece el ancho máximo de la imagen al 33% del contenedor en pantallas con un ancho mínimo de 1200px */
   }
 }
+
 /*fin responsive boostrap tienda*/
 .producto {
   display: inline-block;
@@ -247,60 +275,37 @@ footer footer-right ul li footer-right ul li:last-child {
   margin-top: 10px;
 }
 
- .imgtienda {
-        width: 100%; 
-        height: auto; 
-      }
- #video-container {
-   position: relative;
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;}
-   video { max-width: 100%;
-   max-height: 100%;}
-            
+.imgtienda {
+  width: 90%;
+  height: auto;
+  align-items: center;
+}
+
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .galeriaf {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
 }
-.galeriaf .item {
-  background-size: cover;
-  background-position: center;
+
+.galeriaf img {
+  max-width: 100%;
+  height: auto;
 }
-.galeriaf .item1 {
-  grid-column: 1/span 2;
-  grid-row: 1/span 2;
-  background-image: url("../png/f1.jpg");
-}
-.galeriaf .item2 {
-  grid-column: 3;
-  grid-row: 1;
-  background-image: url("../png/f2.jpg");
-}
-.galeriaf .item3 {
-  grid-column: 3;
-  grid-row: 1;
-  background-image: url("../png/f3.jpg");
-}
-.galeriaf .item4 {
-  grid-column: 1;
-  grid-row: 3;
-  background-image: url("../png/f4.jpg");
-}
-.galeriaf .item5 {
-  grid-column: 2;
-  grid-row: 3;
-  background-image: url("../png/f5.jpg");
-}
-.galeriaf .item6 {
-  grid-column: 3;
-  grid-row: 3;
-  background-image: url("../png/f6.jpg");
-}
+
 
 .contenedorr {
   width: 300px;
@@ -317,6 +322,7 @@ footer footer-right ul li footer-right ul li:last-child {
   width: 100%;
   height: 100%;
 }
+
 .contenedor a {
   color: #161616;
 }
@@ -330,16 +336,19 @@ footer footer-right ul li footer-right ul li:last-child {
   width: 200px;
   text-align: center;
 }
+
 .producto img {
   width: 150px;
   height: 150px;
 }
+
 .producto .nombre {
   color: #ccc;
   font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
 }
+
 .producto .precio {
   color: #ffffff;
   font-size: 16px;
@@ -349,7 +358,7 @@ footer footer-right ul li footer-right ul li:last-child {
 /*box tienda*/
 /*box de tienda mobile*/
 .tiendabox {
-  width: 70%;
+  width: 80%;
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
@@ -358,7 +367,6 @@ footer footer-right ul li footer-right ul li:last-child {
   border-radius: 10px;
   text-align: center;
 }
-
 /*fin box de tienda mobile*/
 /*caja de contacto/box*/
 .contacto {
@@ -372,112 +380,125 @@ footer footer-right ul li footer-right ul li:last-child {
   text-align: center;
 }
 
-/*fin cajas*//*# sourceMappingURL=main.css.map */
-@media (max-width: 768px){
-  .producto{ display: none;}}
-  
-  
-  @media (max-width: 768px){
-    .linkhome{display: none;}
+/*fin cajas*/
+/*# sourceMappingURL=main.css.map */
+@media (max-width: 768px) {
+  .producto {
+    display: none;
   }
-  
-  @media (max-width: 768px){
-    .ofertashome{display: none;}
-  }
-  
-  @media (min-width: 768px){
-    .tiendabox{display: none;}
-  }
-  
-  /*fin home boostrap responsive*/
-  
-  /*Nosotros Boostrap responsive*/
-  
-  @media (max-width: 768px){
-    
-     #video-container {
-  display: none;
-     }
-    }
-  
-  
-    @media (max-width: 768px){
-      .footerr{
-        width: 10px;
-      
-      }
-    }
-    @media (max-width: 768px){
-      .map{
-       
-          width: 400px;
-          height: 300px;
-        
-        
-      }
-    }
-  /*fin Nosotros Boostrap responsive*/
-  
-  /*boxs responsive boostrap*/
-    @media (max-width: 576px){
-      .producto{ display: none;}}
-  
-      @media (max-width: 768px){
-        .map{
-         
-            width: 250px;
-            height: 150px;
-          
-          
-        }
-      }
-      @media (min-width: 576px){
-        .contacto{
-          width: 90%;
-        }
-      }
-  
-      @media (min-widt: 768px){
-        .contacto{
-         
-            display: none;
-          
-          
-        }
-      }
-      /*fin boxs responsive boostrap*/
-  
-  
-  
-    /*responsive boostrap tienda*/
-      @media (min-width: 576px){
-        .imgl{
-         
-        
-          
-        }
-      }
-  
-      @media (width < 768px){
-        .tiendat{
-         
-            display: none;
-          
-          
-        }
-      }
-  
-  
-      @media (min-width: 768px) {
-        .imgtienda {
-          max-width: 50%; /* establece el ancho máximo de la imagen al 50% del contenedor en pantallas con un ancho mínimo de 768px */
-        }
-      }
-      
-      @media (min-width: 1200px) {
-        .imgtienda {
-          max-width: 33%; /* establece el ancho máximo de la imagen al 33% del contenedor en pantallas con un ancho mínimo de 1200px */
-        }
-      }
+}
 
-   
+
+@media (max-width: 768px) {
+  .linkhome {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ofertashome {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tiendabox {
+    display: none;
+  }
+}
+
+/*fin home boostrap responsive*/
+
+/*Nosotros Boostrap responsive*/
+
+@media (max-width: 768px) {
+
+  #video-container {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footerr {
+    width: 10px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+
+    width: 400px;
+    height: 300px;
+
+
+  }
+}
+
+/*fin Nosotros Boostrap responsive*/
+
+/*boxs responsive boostrap*/
+@media (max-width: 576px) {
+  .producto {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .map {
+
+    width: 250px;
+    height: 150px;
+
+
+  }
+}
+
+@media (min-width: 576px) {
+  .contacto {
+    width: 90%;
+  }
+}
+
+@media (min-widt: 768px) {
+  .contacto {
+
+    display: none;
+
+
+  }
+}
+
+/*fin boxs responsive boostrap*/
+
+
+
+/*responsive boostrap tienda*/
+@media (min-width: 576px) {
+  .imgl {}
+}
+
+@media (width < 768px) {
+  .tiendat {
+
+    display: none;
+
+
+  }
+}
+
+
+@media (min-width: 768px) {
+  .imgtienda {
+    max-width: 50%;
+    /* establece el ancho máximo de la imagen al 50% del contenedor en pantallas con un ancho mínimo de 768px */
+  }
+}
+
+@media (min-width: 1200px) {
+  .imgtienda {
+    max-width: 33%;
+    /* establece el ancho máximo de la imagen al 33% del contenedor en pantallas con un ancho mínimo de 1200px */
+  }
+}
